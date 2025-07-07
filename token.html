@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Online Travel Token</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Huelic:wght@700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script> <!-- Link the JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script> <!-- QRCode.js library -->
+</head>
+<body>
+    <header class="token-header">
+        <h1>Get Your Online Travel Token</h1>
+    </header>
+    <main>
+        <section class="token-section">
+            <h2>Generate Your Travel Token</h2>
+            <form class="token-form" id="token-form">
+                <label for="passenger-name">Name of Passenger:</label>
+                <input type="text" id="passenger-name" name="passenger-name" required pattern="[a-zA-Z\s]+">
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="mobile-number">Mobile Number:</label>
+                <input type="text" id="mobile-number" name="mobile-number" required pattern="\d{10}">
+
+                <label for="source-station">Source Station:</label>
+                <input type="text" id="source-station" name="source-station" required>
+
+                <label for="destination-station">Destination Station:</label>
+                <input type="text" id="destination-station" name="destination-station" required>
+
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="terms.html">terms and policies</a>.
+                </label>
+
+                <button type="submit">Generate Token</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lucknow Metro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

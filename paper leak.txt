@@ -1,0 +1,2 @@
+jsp operators and their syntax
+code for type of operators

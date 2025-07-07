@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invest on Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Huelic:wght@700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <header class="invest-header">
+        <h1>Invest on Us</h1>
+    </header>
+    <main>
+        <section class="invest-section">
+            <h2>Investment Opportunities with Lucknow Metro</h2>
+            <form class="invest-form" id="invest-form">
+                <label for="investor-name">Investor Name:</label>
+                <input type="text" id="investor-name" name="investor-name" required pattern="[a-zA-Z\s]+">
+
+                <label for="company-name">Company Name:</label>
+                <input type="text" id="company-name" name="company-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" id="phone-number" name="phone-number" required pattern="\d{10}">
+
+                <label for="investment-amount">Investment Amount:</label>
+                <input type="number" id="investment-amount" name="investment-amount" required>
+
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="terms.html">terms and policies</a>.
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lucknow Metro. All rights reserved.</p>
+    </footer>
+</body>
+</html>

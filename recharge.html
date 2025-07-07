@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Your Metro Card</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Huelic:wght@700&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script> <!-- Link the JavaScript file -->
+</head>
+<body>
+    <header class="recharge-header">
+        <h1>Welcome to UPMRC</h1>
+    </header>
+    <main>
+        <section class="recharge-section">
+            <h2>Recharge Your Metro Travel Card</h2>
+            <form class="recharge-form" id="recharge-form">
+                <label for="cardholder-name">Card Holder Name:</label>
+                <input type="text" id="cardholder-name" name="cardholder-name" required pattern="[a-zA-Z\s]+">
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required pattern="\d{10}">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="recharge-amount">Recharge Amount:</label>
+                <input type="number" id="recharge-amount" name="recharge-amount" required>
+
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    I agree to the <a href="terms.html">terms and policies</a>.
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Lucknow Metro. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
